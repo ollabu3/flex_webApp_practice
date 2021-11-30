@@ -1,0 +1,149 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}
+
+section {
+  width: 1200px;
+  margin: auto;
+}
+.section-header {
+}
+.section-header h1 {
+  font-size: 32px;
+}
+
+.section-header h1::after {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-left: 10px;
+  color: #444;
+}
+
+.section-header {
+}
+
+.items {
+  display: flex;
+  margin-top: 30px;
+}
+
+.item {
+  flex: 1;
+  margin-right: 10px;
+  height: 300px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+
+.item {
+}
+.item img {
+  width: 100%;
+}
+.item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.category {
+  font-weight: bold;
+  color: royalblue;
+}
+.item p {
+  margin: 5px 0;
+}
+.item h4 {
+  margin-bottom: 5px;
+}
+.item p .fa {
+  color: gold;
+}
+.item p em {
+  font-size: normal;
+  font-size: 13px;
+}
+.price {
+  font-weight: bold;
+  color: royalblue;
+  display: block;
+  margin-bottom: 5px;
+}
+.badge {
+  background-color: pink;
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.badge.only {
+  background-color: yellowgreen;
+}
+
+.item.event h4 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .item:nth-child(1) {
+    order: 2;
+  }
+  .item:nth-child(2) {
+    order: 3;
+  }
+  .item:nth-child(3) {
+    order: 4;
+  }
+  .item:last-child {
+    order: 1;
+  }
+}
