@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 40px;
+  }
+  .heading p {
+    padding: 0;
+  }
+  .inner {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .about-content {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .about-content div {
+    padding: 10px;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .ranking-content {
+    padding: 50px 0;
+  }
+  .item {
+    width: 100%;
+  }
+  .up-image {
+    width: 100%;
+  }
+  .blog-header {
+    text-align: center;
+  }
+  .blog-header p {
+    font-size: 20px;
+  }
+  .bolg-content {
+    padding: 50px 0;
+  }
+  .post-content {
+    flex-direction: column;
+  }
+  .recent-post-item {
+    flex-direction: column;
+  }
+  .recent-post-items div img {
+    width: 100%;
+  }
+  .shared-post-items {
+    width: 100%;
+  }
+  .shared-post-item img {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-content ul {
+    margin-bottom: 20px;
+  }
+
+  header {
+  }
+  .banner {
+  }
+  .lnb {
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .gnb {
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+    transition: 0.3s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .gnb li a {
+    /*border: 1px solid #000;*/
+    color: #000;
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    /*border: 1px solid red;*/
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}
